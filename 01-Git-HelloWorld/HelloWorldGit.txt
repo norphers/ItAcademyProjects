@@ -1,0 +1,3 @@
+First doc of the project hello-world
+Changes from master to branch1
+Doc edited in branch1
