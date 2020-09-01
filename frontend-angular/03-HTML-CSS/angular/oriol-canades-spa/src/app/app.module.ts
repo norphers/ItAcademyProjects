@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+// components
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -8,7 +9,15 @@ import { HomeComponent } from './components/home/home.component';
 import { CurriculumComponent } from './components/curriculum/curriculum.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { BlogComponent } from './components/blog/blog.component';
-import { AboutComponent } from './components/about/about.component';
+import { SignInComponent } from './components/sign-in/sign-in.component';
+import { LoginComponent } from './components/login/login.component';
+import { ContactComponent } from './components/contact/contact.component';
+
+//routes
+import { APP_ROUTING } from "./app.routes";
+
+//services
+
 
 @NgModule({
   declarations: [
@@ -19,10 +28,13 @@ import { AboutComponent } from './components/about/about.component';
     CurriculumComponent,
     ProjectsComponent,
     BlogComponent,
-    AboutComponent
+    SignInComponent,
+    LoginComponent,
+    ContactComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    APP_ROUTING
   ],
   providers: [],
   bootstrap: [AppComponent]

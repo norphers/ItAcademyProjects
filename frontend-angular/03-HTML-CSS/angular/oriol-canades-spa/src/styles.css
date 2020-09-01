@@ -1,12 +1,23 @@
+/*
 * {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
 }
+*/
+
+body {
+    padding-bottom: 50px;
+}
 
 .navbar {
     background: #1c4966;
-    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
     font-size: 20px;
+    color: #ffffff;
+}
+
+.main-container {
+    margin-top: 20px;
 }
 
 a {
@@ -27,4 +38,41 @@ ul {
     background-color: #BEBEBE;
     font-family: 'Montserrat', sans-serif;
     color: #515C5D;
+}
+
+
+/* CARDS */
+
+.card-body {
+    background: #ffffff;
+}
+
+
+/* CSS ANIMATION FADE-IN */
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.fast {
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
 }
